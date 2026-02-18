@@ -1,4 +1,5 @@
 ![](https://github.com/LeoMoulin/ClockSystem-TP/actions/workflows/gradle.yml/badge.svg)
+![](https://github.com/LeoMoulin/ClockSystem-TP/actions/workflows/pmd.yml/badge.svg)
 
 # ClockSystem
 
