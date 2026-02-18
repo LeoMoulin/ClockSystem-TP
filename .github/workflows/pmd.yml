@@ -35,9 +35,10 @@ jobs:
           rulesets: 'category/java/errorprone.xml'
           sourcePath: 'app/src/main/java'
           analyzeModifiedFilesOnly: false
-      - name: Fail build if there are violations
-        if: steps.pmd.outputs.violations != 0
-        run: exit 1
       - uses: actions/upload-artifact@v6
         with:
           path: app/build/reports/tests
+      - name: Fail build if there are violations
+        if: steps.pmd.outputs.violations != 0
+        run: exit 1
+      
