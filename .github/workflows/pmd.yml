@@ -39,5 +39,5 @@ jobs:
         if: steps.pmd.outputs.violations != 0
         run: exit 1
       - uses: actions/upload-artifact@v6
-      with:
-        path: app/build/reports/tests
+        with:
+          path: app/build/reports/tests
