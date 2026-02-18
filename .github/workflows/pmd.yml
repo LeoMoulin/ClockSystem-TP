@@ -32,7 +32,7 @@ jobs:
         id: pmd
         uses: pmd/pmd-github-action@v2
         with:
-          rulesets: 'rulesets/java/errorprone.xml'
+          rulesets: 'category/java/errorprone.xml'
           sourcePath: 'src/main/java'
           analyzeModifiedFilesOnly: false
       - name: Fail build if there are violations
